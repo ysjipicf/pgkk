@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_caipu"
+            android:icon="@drawable/ic_menu_caipu"
+            android:title="@string/menu_caipu_title" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_menu_news"
+            android:title="@string/menu_news_title" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/ic_menu_voide"
+            android:title="@string/menu_video_title" />
+        <item
+            android:id="@+id/nav_music"
+            android:icon="@drawable/ic_menu_music"
+            android:title="@string/menu_music_title">
+        </item>
+        <item
+            android:id="@+id/nav_read"
+            android:icon="@drawable/ic_menu_book"
+            android:title="@string/menu_read_title">
+        </item>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow_title" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="分享" />-->
+        </menu>
+    </item>
+
+</menu>

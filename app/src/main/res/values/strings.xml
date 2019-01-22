@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">宝器</string>
+
+    <string name="app_name_1">pgkk@pgkk.com</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="menu_news_title">新闻</string>
+    <string name="menu_video_title">视频</string>
+    <string name="menu_caipu_title">菜谱</string>
+    <string name="menu_music_title">音乐</string>
+    <string name="menu_read_title">阅读</string>
+    <string name="menu_slideshow_title">图片</string>
+
+    <string name="image_transition">image_transition</string>
+    <array name="caiput_title">
+        <item>回锅肉</item>
+        <item>毛血旺</item>
+        <item>水煮肉片</item>
+        <item>烤鱼</item>
+        <item>红烧肉</item>
+        <item>麻婆豆腐</item>
+        <item>龙须菜</item>
+        <item>魔芋烧鸭</item>
+        <item>夫妻肺片</item>
+        <item>鱼香肉丝</item>
+        <item>梅菜扣肉</item>
+        <item>醉排骨</item>
+        <item>东坡肉</item>
+        <item>油焖春笋</item>
+        <item>腊味合蒸</item>
+        <item>冰糖湘莲</item>
+        <item>炒血鸭</item>
+        <item>粉蒸排骨</item>
+        <item>辣子鸡</item>
+        <item>焖鱼头</item>
+        <item>东安子鸡</item>
+        <item>清蒸鱼</item>
+        <item>西湖醋鱼</item>
+        <item>佛跳墙</item>
+        <item>干菜焖肉</item>
+        <item>翠竹报春</item>
+    </array>
+
+    <array name="color_bg">
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorPrimary1</item>
+        <item>@color/colorPrimaryDark1</item>
+        <item>@color/colorAccent1</item>
+    </array>
+</resources>
