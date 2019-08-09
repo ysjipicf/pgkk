@@ -1,9 +1,7 @@
 package com.pgkk.presenter;
 
 import com.pgkk.data.api.MusicApi;
-import com.pgkk.data.api.VideoApi;
 import com.pgkk.data.model.Music;
-import com.pgkk.data.model.Video;
 import com.pgkk.data.rx.ResponseObserver;
 import com.pgkk.mvp.RxMvpPresenter;
 import com.pgkk.mvp.common.NetView;
@@ -13,7 +11,6 @@ import java.util.List;
 import javax.inject.Inject;
 
 import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Action0;
 import rx.schedulers.Schedulers;
 
 /**

@@ -1,7 +1,6 @@
 package com.pgkk.presenter;
 
 import com.pgkk.data.api.ReadApi;
-import com.pgkk.data.model.Read;
 import com.pgkk.data.model.ReadDetail;
 import com.pgkk.data.rx.ResponseObserver;
 import com.pgkk.mvp.RxMvpPresenter;

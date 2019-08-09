@@ -1,16 +1,13 @@
 package com.pgkk.ui.read;
 
 import android.app.Activity;
-import android.support.v4.view.ViewCompat;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.pgkk.R;
 import com.pgkk.common.utils.DateUtils;
 import com.pgkk.common.utils.image.ImageLoader;
-import com.pgkk.data.model.Music;
 import com.pgkk.data.model.Read;
 
 import java.util.List;

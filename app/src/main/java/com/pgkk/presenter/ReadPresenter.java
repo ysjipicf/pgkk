@@ -1,13 +1,10 @@
 package com.pgkk.presenter;
 
 import com.pgkk.data.api.ReadApi;
-import com.pgkk.data.model.Music;
 import com.pgkk.data.model.Read;
 import com.pgkk.data.rx.ResponseObserver;
 import com.pgkk.mvp.RxMvpPresenter;
 import com.pgkk.mvp.common.NetView;
-
-import java.util.List;
 
 import javax.inject.Inject;
 

@@ -13,7 +13,6 @@ import com.shuyu.gsyvideoplayer.GSYVideoPlayer;
 import com.shuyu.gsyvideoplayer.utils.GSYVideoType;
 import com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer;
 
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;

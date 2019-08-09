@@ -1,31 +1,18 @@
 package com.pgkk.ui.video;
 
 import android.app.Activity;
-import android.content.Context;
-import android.os.Build;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.pgkk.R;
-import com.pgkk.common.utils.DateUtils;
-import com.pgkk.common.utils.image.ImageLoader;
 import com.pgkk.data.model.Video;
-import com.pgkk.ui.base.adapter.BaseRecycerViewAdapter;
-import com.pgkk.ui.video.play.SampleVideo;
-import com.pgkk.ui.video.play.SwitchVideoModel;
-import com.shuyu.gsyvideoplayer.utils.ListVideoUtil;
 import com.shuyu.gsyvideoplayer.utils.OrientationUtils;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
 
 /**

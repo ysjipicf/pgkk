@@ -3,7 +3,6 @@ package com.pgkk.data.api;
 
 import com.pgkk.data.model.Read;
 import com.pgkk.data.model.ReadDetail;
-import com.pgkk.data.model.Video;
 
 import retrofit2.http.GET;
 import retrofit2.http.Path;

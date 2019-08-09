@@ -1,16 +1,12 @@
 package com.pgkk.ui.music;
 
 import android.app.Activity;
-import android.support.v4.view.ViewCompat;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.pgkk.R;
 import com.pgkk.common.utils.image.ImageLoader;
-import com.pgkk.data.model.Meizi;
 import com.pgkk.data.model.Music;
 
 import java.util.List;

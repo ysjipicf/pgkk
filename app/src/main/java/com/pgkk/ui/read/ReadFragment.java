@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
@@ -14,18 +13,12 @@ import android.view.ViewGroup;
 
 import com.pgkk.R;
 import com.pgkk.common.utils.SnackbarUtil;
-import com.pgkk.data.model.Music;
 import com.pgkk.data.model.Read;
 import com.pgkk.di.news.NewsComponent;
 import com.pgkk.mvp.common.NetView;
-import com.pgkk.presenter.MusicPresenter;
 import com.pgkk.presenter.ReadPresenter;
 import com.pgkk.ui.base.BaseFragment;
-import com.pgkk.ui.music.MusicAdapter;
-import com.pgkk.ui.music.MusicDetialActivity;
 import com.pgkk.ui.widget.PagingOnScrollListener;
-
-import java.util.List;
 
 import javax.inject.Inject;
 

@@ -2,12 +2,9 @@ package com.pgkk.data.api;
 
 
 import com.pgkk.data.model.Meizi;
-import com.pgkk.data.model.News;
 
 import retrofit2.http.GET;
-import retrofit2.http.PATCH;
 import retrofit2.http.Path;
-import retrofit2.http.Query;
 import rx.Observable;
 
 /**

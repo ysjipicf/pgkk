@@ -10,10 +10,7 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.ms.square.android.expandabletextview.ExpandableTextView;
 import com.pgkk.R;
 import com.pgkk.common.utils.SnackbarUtil;
 import com.pgkk.data.model.Music;

@@ -10,7 +10,6 @@ import com.pgkk.mvp.common.NetView;
 import javax.inject.Inject;
 
 import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Action0;
 import rx.schedulers.Schedulers;
 
 /**

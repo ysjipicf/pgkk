@@ -2,7 +2,6 @@ package com.pgkk.data.api;
 
 import android.app.Application;
 
-
 import com.pgkk.data.model.News;
 import com.pgkk.data.net.BaseProjetRetrofit;
 

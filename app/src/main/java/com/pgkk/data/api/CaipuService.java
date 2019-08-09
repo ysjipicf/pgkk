@@ -2,7 +2,6 @@ package com.pgkk.data.api;
 
 import android.app.Application;
 
-
 import com.google.gson.Gson;
 import com.pgkk.common.utils.AssestUtils;
 import com.pgkk.data.model.CaiPu;

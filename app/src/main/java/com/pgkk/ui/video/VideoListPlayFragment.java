@@ -20,8 +20,6 @@ import com.pgkk.presenter.VideoPresenter;
 import com.pgkk.ui.base.BaseFragment;
 import com.pgkk.ui.widget.PagingOnScrollListener;
 
-import java.util.List;
-
 import javax.inject.Inject;
 
 import butterknife.BindView;

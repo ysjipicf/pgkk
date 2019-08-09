@@ -21,7 +21,6 @@ import com.pgkk.di.news.NewsComponent;
 import com.pgkk.mvp.common.NetView;
 import com.pgkk.presenter.MeiziPresenter;
 import com.pgkk.ui.base.BaseFragment;
-import com.pgkk.ui.widget.ViewPagerActivity;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -185,13 +184,8 @@ public class MeiziFragment extends BaseFragment implements NetView<Meizi> {
         });
 
 
-        meiziAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
-            @Override
-            public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
 
-                new ViewPagerActivity().launch(getActivity(), adapter.getData(), position, "url", null);
-            }
-        });
+
 
         meiziAdapter.setOnItemLongClickListener(new BaseQuickAdapter.OnItemLongClickListener() {
             @Override

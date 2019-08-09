@@ -16,7 +16,6 @@ import com.pgkk.data.api.ReadApi;
 import com.pgkk.data.api.ReadService;
 import com.pgkk.data.api.VideoApi;
 import com.pgkk.data.api.VideoService;
-import com.pgkk.data.model.Read;
 import com.pgkk.data.model.Video;
 import com.pgkk.ui.caipu.SuspensionAdapter;
 import com.pgkk.ui.meizi.MeiziAdapter;
@@ -26,7 +25,6 @@ import com.pgkk.ui.read.ReadAdapter;
 import com.pgkk.ui.video.VideoAdapter;
 import com.pgkk.ui.video.VideoListAdapter;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 

@@ -11,7 +11,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-
+//    df35d695f9876eda2eeef53cc175708f
     signingConfigs {
         release {
             storeFile file("keystore/Pgkk.keystore")
@@ -27,7 +27,7 @@ android {
 
     buildTypes {
         debug {
-            signingConfig signingConfigs.release
+//            signingConfig signingConfigs.release
             versionNameSuffix "_debug"
         }
 

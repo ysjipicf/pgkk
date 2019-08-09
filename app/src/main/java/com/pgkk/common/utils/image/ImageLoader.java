@@ -2,18 +2,13 @@ package com.pgkk.common.utils.image;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.res.ColorStateList;
-import android.graphics.Bitmap;
 import android.net.Uri;
-import android.support.v7.graphics.Palette;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.pgkk.R;
-import com.pgkk.common.utils.AppLog;
 
 /**
  * Created by tanxueze on 2017/12/7.

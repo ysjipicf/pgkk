@@ -150,7 +150,7 @@ public class SnackbarUtil {
         View view = snackbar.getView();
         if(view!=null){
             view.setBackgroundColor(backgroundColor);
-            ((TextView) view.findViewById(R.id.snackbar_text)).setTextColor(messageColor);
+//            ((TextView) view.findViewById(R.id.snackbar_text)).setTextColor(messageColor);
         }
     }
 

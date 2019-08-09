@@ -4,13 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.net.Uri;
-import android.os.Build;
-import android.support.v4.content.FileProvider;
-import android.util.Log;
 import android.widget.Toast;
-
-import java.io.File;
 
 /**
  * Created by tanxueze on 2018/5/8.

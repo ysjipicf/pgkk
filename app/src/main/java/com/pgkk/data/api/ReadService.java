@@ -4,7 +4,6 @@ import android.app.Application;
 
 import com.pgkk.data.model.Read;
 import com.pgkk.data.model.ReadDetail;
-import com.pgkk.data.model.Video;
 import com.pgkk.data.net.ReadProjetRetrofit;
 
 import javax.inject.Inject;

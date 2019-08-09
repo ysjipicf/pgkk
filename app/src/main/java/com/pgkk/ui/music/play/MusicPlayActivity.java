@@ -19,7 +19,6 @@ import com.pgkk.R;
 import com.pgkk.common.utils.AppLog;
 import com.pgkk.data.model.Music;
 import com.pgkk.ui.base.BaseActivity;
-import com.pgkk.ui.music.MusicDetialActivity;
 
 import java.io.IOException;
 import java.util.List;
