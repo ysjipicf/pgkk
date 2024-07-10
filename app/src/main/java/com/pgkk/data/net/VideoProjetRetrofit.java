@@ -104,7 +104,7 @@ public class VideoProjetRetrofit extends BaseRetrofit {
 
             builder.connectTimeout(60 * 1000, TimeUnit.MILLISECONDS)
                     .readTimeout(60 * 1000, TimeUnit.MILLISECONDS)
-                    .sslSocketFactory(sslContext.getSocketFactory())
+//                    .sslSocketFactory(sslContext.getSocketFactory())
                     .hostnameVerifier(DO_NOT_VERIFY);
 
             return builder;

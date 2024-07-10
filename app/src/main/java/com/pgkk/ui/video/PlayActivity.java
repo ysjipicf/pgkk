@@ -6,15 +6,16 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v4.util.Pair;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.transition.Transition;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.util.Pair;
+import androidx.core.view.ViewCompat;
 
 import com.pgkk.R;
 import com.pgkk.common.utils.AppLog;
@@ -22,7 +23,7 @@ import com.pgkk.data.model.Video;
 import com.pgkk.ui.video.play.OnTransitionListener;
 import com.pgkk.ui.video.play.SampleVideo;
 import com.pgkk.ui.video.play.SwitchVideoModel;
-import com.shuyu.gsyvideoplayer.GSYVideoPlayer;
+import com.shuyu.gsyvideoplayer.GSYVideoManager;
 import com.shuyu.gsyvideoplayer.utils.OrientationUtils;
 
 import java.net.HttpURLConnection;
@@ -54,7 +55,6 @@ public class PlayActivity extends AppCompatActivity {
 
     private Video.ItemListBean.DataBean dataBean;
 
-
     private List<SwitchVideoModel> list;
 
     public static void launch(Activity activity,View view, Video.ItemListBean.DataBean dataBean) {
@@ -62,7 +62,7 @@ public class PlayActivity extends AppCompatActivity {
         intent.putExtra("DATA", dataBean);
         intent.putExtra("TRANSITION", true);
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-            Pair pair = new Pair(view, "IMG_TRANSITION");
+            androidx.core.util.Pair pair = new Pair(view, "IMG_TRANSITION");
             ActivityOptionsCompat activityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(activity, pair);
             ActivityCompat.startActivity(activity, intent, activityOptions.toBundle());
         } else {
@@ -167,8 +167,7 @@ public class PlayActivity extends AppCompatActivity {
             return;
         }
         //释放所有
-        videoPlayer.setStandardVideoAllCallBack(null);
-        GSYVideoPlayer.releaseAllVideos();
+        GSYVideoManager.releaseAllVideos();
         if (isTransition && Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             super.onBackPressed();
         } else {

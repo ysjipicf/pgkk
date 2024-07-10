@@ -4,10 +4,11 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.TextView;
+
+import androidx.appcompat.widget.Toolbar;
 
 import com.pgkk.PgkkApplication;
 import com.pgkk.R;

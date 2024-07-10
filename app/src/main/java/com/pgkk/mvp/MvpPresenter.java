@@ -1,6 +1,7 @@
 package com.pgkk.mvp;
 
-import android.support.annotation.UiThread;
+
+import androidx.annotation.UiThread;
 
 /**
  * Created by tanxueze on 2017/12/6.

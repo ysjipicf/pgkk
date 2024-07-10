@@ -60,7 +60,7 @@ public class ImageLoader {
      * @param simpleTarget
      */
     public static void displayImage(Activity activity, String path,SimpleTarget simpleTarget) {
-        Glide.with(activity).load(path).asBitmap().into(simpleTarget);
+        Glide.with(activity).load(path).into(simpleTarget);
     }
 
 

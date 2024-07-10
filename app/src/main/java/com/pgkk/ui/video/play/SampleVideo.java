@@ -9,9 +9,9 @@ import android.widget.Toast;
 
 import com.pgkk.R;
 import com.shuyu.gsyvideoplayer.GSYVideoManager;
-import com.shuyu.gsyvideoplayer.GSYVideoPlayer;
 import com.shuyu.gsyvideoplayer.utils.GSYVideoType;
 import com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer;
+import com.shuyu.gsyvideoplayer.video.base.GSYVideoPlayer;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -106,7 +106,7 @@ public class SampleVideo extends StandardGSYVideoPlayer {
      */
     public boolean setUp(List<SwitchVideoModel> url, boolean cacheWithPlay, Object... objects) {
         mUrlList = url;
-        return setUp(url.get(0).getUrl(), cacheWithPlay, objects);
+        return setUp(url.get(0).getUrl(), cacheWithPlay, objects.toString());
     }
 
     /**
@@ -120,7 +120,7 @@ public class SampleVideo extends StandardGSYVideoPlayer {
      */
     public boolean setUp(List<SwitchVideoModel> url, boolean cacheWithPlay, File cachePath, Object... objects) {
         mUrlList = url;
-        return setUp(url.get(0).getUrl(), cacheWithPlay, cachePath, objects);
+        return setUp(url.get(0).getUrl(), cacheWithPlay, cachePath, objects.toString());
     }
 
     @Override
@@ -140,7 +140,7 @@ public class SampleVideo extends StandardGSYVideoPlayer {
                 if (mSourcePosition != position) {
                     if ((mCurrentState == GSYVideoPlayer.CURRENT_STATE_PLAYING
                             || mCurrentState == GSYVideoPlayer.CURRENT_STATE_PAUSE)
-                            && GSYVideoManager.instance().getMediaPlayer() != null) {
+                            && GSYVideoManager.instance().getCurPlayerManager().getMediaPlayer() != null) {
                         final String url = mUrlList.get(position).getUrl();
                         onVideoPause();
                         final long currentPosition = mCurrentPosition;
@@ -150,7 +150,7 @@ public class SampleVideo extends StandardGSYVideoPlayer {
                         new Handler().postDelayed(new Runnable() {
                             @Override
                             public void run() {
-                                setUp(url, mCache, mCachePath, mObjects);
+                                setUp(url, mCache, mCachePath, "");
                                 setSeekOnStart(currentPosition);
                                 startPlayLogic();
                                 cancelProgressTimer();

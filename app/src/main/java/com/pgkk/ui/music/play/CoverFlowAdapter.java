@@ -3,16 +3,19 @@ package com.pgkk.ui.music.play;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.support.v4.view.PagerAdapter;
-import android.support.v7.graphics.Palette;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.bumptech.glide.request.animation.GlideAnimation;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.palette.graphics.Palette;
+import androidx.viewpager.widget.PagerAdapter;
+
 import com.bumptech.glide.request.target.SimpleTarget;
+import com.bumptech.glide.request.transition.Transition;
 import com.pgkk.R;
 import com.pgkk.common.utils.AppLog;
 import com.pgkk.common.utils.image.ImageLoader;
@@ -85,7 +88,7 @@ public class CoverFlowAdapter  extends PagerAdapter {
     private void initColor(MyHolder holder, Music.TracksBean tracksBean) {
         ImageLoader.displayImage((Activity) context,tracksBean.getSongphoto(),new SimpleTarget<Bitmap>() {
             @Override
-            public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
+            public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
                 Palette.from(resource).generate(palette -> {
                     try {
                         color = palette.getLightMutedSwatch().getRgb();

@@ -11,13 +11,20 @@
         android:gravity="center">
 
     </RelativeLayout>
-
-    <com.shuyu.gsyvideoplayer.GSYImageCover
+    
+    <com.shuyu.gsyvideoplayer.video.NormalGSYVideoPlayer
         android:id="@+id/cover"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"/>
+
+   <!-- <com.shuyu.gsyvideoplayer.GSYImageCover
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY" />-->
 
     <RelativeLayout
         android:id="@+id/thumb"

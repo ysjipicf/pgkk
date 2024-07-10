@@ -1,13 +1,14 @@
 package com.pgkk.ui.caipu;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
@@ -53,6 +54,7 @@ public class CaiPuMainFragment extends BaseFragment {
         color_title = getResources().getIntArray(R.array.color_bg);
         titls = getResources().getStringArray(R.array.caiput_title);
 
+        mFeedList = contentView.findViewById(R.id.feed_list);
         initView();
 
         return contentView;

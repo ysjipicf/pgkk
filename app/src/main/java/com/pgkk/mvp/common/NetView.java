@@ -1,6 +1,7 @@
 package com.pgkk.mvp.common;
 
-import android.support.annotation.UiThread;
+
+import androidx.annotation.UiThread;
 
 import com.pgkk.mvp.MvpView;
 

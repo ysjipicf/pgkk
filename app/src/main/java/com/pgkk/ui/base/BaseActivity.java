@@ -4,15 +4,17 @@ import android.content.res.ColorStateList;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.graphics.Palette;
-import android.support.v7.widget.Toolbar;
 
-import com.bumptech.glide.request.animation.GlideAnimation;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.palette.graphics.Palette;
+
 import com.bumptech.glide.request.target.SimpleTarget;
+import com.bumptech.glide.request.transition.Transition;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.pgkk.common.utils.AppLog;
 import com.pgkk.common.utils.image.ImageLoader;
 
@@ -68,7 +70,7 @@ public class BaseActivity extends AppCompatActivity {
         final int[] color = {0xffffcc00};
         ImageLoader.displayImage(this, url, new SimpleTarget<Bitmap>() {
             @Override
-            public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
+            public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
                 Palette.from(resource).generate(palette -> {
                     try {
                         color[0] = palette.getDarkMutedSwatch().getRgb();

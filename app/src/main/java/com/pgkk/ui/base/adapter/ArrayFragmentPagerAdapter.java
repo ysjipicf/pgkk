@@ -1,7 +1,7 @@
 package com.pgkk.ui.base.adapter;
 
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 import java.util.Arrays;
 import java.util.List;
